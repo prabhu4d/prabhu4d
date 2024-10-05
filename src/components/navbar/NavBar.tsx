@@ -11,14 +11,16 @@ const NavBar = () => {
     <div
       style={{
         width: 'fit-content',
-        margin: '10px',
-        position: 'relative',
+        position: 'sticky',
+        top: '0',
+        left: '0',
         height: '45px',
         borderRadius: '5px',
-        overflow: 'hidden',
+        // padding: '10px',
+        // overflow: 'hidden',
       }}
     >
-      <div
+      {/* <div
         style={{
           position: 'absolute',
           height: '4px',
@@ -54,7 +56,7 @@ const NavBar = () => {
           transform: 'translateX(-50%)',
           // left: '2%',
         }}
-      ></div>
+      ></div> */}
       <nav className={clsx(styles.navbar)}>
         {menus.map((menu, index) => {
           return (
